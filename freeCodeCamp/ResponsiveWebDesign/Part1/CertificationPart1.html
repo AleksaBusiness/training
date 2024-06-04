@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title"> This is a test project
+        <p id="description">This is a test description</p>
+    </h1>
+    <form id="survey-form">   
+        <fieldset>
+            <label for="name" id="name-label">Name
+                <input id="name" type="text" required placeholder="Your name here">
+            </label>
+            <label for="email" id="email-label">Email
+                <input id="email" type="email" required placeholder="Your email here">
+            </label>
+            <label for="number" id="number-label">Age
+                <input id="number" min="13" max="120" type="number" placeholder="Your age here">
+            </label>
+        </fieldset>     
+
+        <fieldset>   
+            <label for="dropdown">Are you allergic to cats?
+                <select id="dropdown">
+                    <option value="1">Allergic</option>
+                    <option value="2">Not Allergic</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="peanuts">Do you like peanuts?
+                <input type="radio" value="peanuts-yes" name="radio-peanuts">Yes
+                <input type="radio" value="peanuts-no" name="radio-peanuts">No
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="cashews">Do you like cashews?
+                <input type="radio" value="cashews-yes" name="radio-cashews">Yes
+                <input type="radio" value="cashews-no" name="radio-cashews">No
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="bananas-yes">I like bananas
+                <input type="checkbox" id="bananas-yes" value="yes">
+            </label>
+            <label for="bananas-no">I don't like bananas
+                <input type="checkbox" id="bananas-no" value="no">
+            </label>
+            <label> Why? 
+                <textarea placeholder="I don't like the taste"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </fieldset> 
+    </form>
+</body>
+</html>
